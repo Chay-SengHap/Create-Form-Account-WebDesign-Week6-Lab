@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Form</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            width: 50%;
+            margin: auto;
+
+           
+        }
+
+        .header{
+            background-color: rgb(206, 203, 200);
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .section2{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .input{
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        
+        .input > div{
+            flex: 1;
+        }
+
+        input{
+            width: 100%;
+            border: 1px solid rgb(159, 157, 157);
+            height: 1.3rem;
+            padding: 0.2rem;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            height: auto;
+        }
+
+        label{
+            color: green;
+            font-size: 0.9rem;
+        }
+
+        /* Full width input section */
+        .full-width{
+            width: 100%;
+        }
+
+        .full-width input{
+            width: 100%;
+        }
+
+        /* Radio button group styling */
+        .radio-group {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            height: 60%;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            Create Account
+        </div>
+
+        <div class="section2">
+
+            <div class="input">
+                <div>
+                    <label for="firstName">First Name*</label><br>
+                    <input type="text" id="firstName" placeholder="enter your first name">
+                </div>
+                <div>
+                    <label for="lastName">Last Name*</label><br>
+                    <input type="text" id="lastName" placeholder="enter your last name">
+                </div>
+            </div>
+
+            <div class="full-width">
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" placeholder="enter your email">
+            </div>
+
+            
+            <div class="input">
+                <div>
+                    <label for="password">Password*</label><br>
+                    <input type="password" id="password" placeholder="enter your password">
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password*</label><br>
+                    <input type="password" id="confirmPassword" placeholder="enter your password again">
+                </div>
+            </div>
+
+            <div class="input">
+                <div>
+                    <label>Gender*</label><br>
+                    <div class="radio-group">
+                       <div class="radio-option">
+                         <input type="radio" id="male" name="gender" value="male">
+                         <label for="male">Male</label>
+                       </div>
+                       <div class="radio-option">
+                         <input type="radio" id="female" name="gender" value="female">
+                         <label for="female">Female</label>
+                       </div>
+                    </div>
+                </div>
+                <div>
+                    <label style="margin-bottom: 20px;">Hobbie*</label>
+                    <div style="display: flex;">
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <input type="checkbox">
+                            <label for="">Sport</label>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <input type="checkbox">
+                            <label for="">Sleep</label>
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <input type="checkbox">
+                            <label for="">Reading</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label>Source of Income*</label><br>
+                    <select name="" id="" class="full-width">
+                        <option value="">Select an Option</option>
+                        <option value="employee">Emplooy</option>
+                        <option value="seller">Seller</option>
+                        <option value="programmer">Programmer</option>
+                    </select>
+                </div>
+                <div>
+                    <label  style="margin-bottom: 20px;">Income*</label>
+                    <div style="display: flex; justify-content: center; ; gap: 5px;">
+                        <input type="range">
+                        <div style="background-color: cornflowerblue; padding: 2px;">20k</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <div>
+                    <label>Upload Profile  Picture*</label><br>
+                    <div style="font-size : 1rem;">
+                        <button>Choose File</button>
+                        No File Chosen
+                    </div>
+                    
+                </div>
+                <div>
+                    <label style="margin-bottom: 20px;">Age*</label>
+                    <div style="display: flex; justify-content: center; ; gap: 5px;">
+                        <input type="number" placeholder="enter your age">
+
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <div class="">
+                    <label>Bio*</label><br>
+                    <div style="font-size : 1rem;">
+                        <textarea  class="full-width" id=""></textarea>
+                       
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+
+        </div>
+        <div style="display: flex; justify-content: end; align-items: center;
+        background-color: rgb(226, 226, 226); height: 2rem; padding :1rem">
+                <button style="height: 2rem;width: 5rem; background-color: rgb(102, 227, 185); border: none; font-weight: bold; ">Create</button>
+        </div>
+ 
+    </div>
+
+</body>
+</html>
